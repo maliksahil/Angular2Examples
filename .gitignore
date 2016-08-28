@@ -1,0 +1,6 @@
+**/*.js.map
+**/*.js
+**/node_modules
+**/typings
+**/!systemjs.config.js
+**/npm-debug*.*
