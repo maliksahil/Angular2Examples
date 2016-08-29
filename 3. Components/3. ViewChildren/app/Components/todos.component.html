@@ -1,0 +1,17 @@
+<div *ngFor="let todo of _todos">
+    <div>
+        <todo-control [todo]="todo" (todoChange)="selectedTodoChange(todo)"></todo-control>
+    </div>
+</div>
+<br/>
+<div *ngIf="_lastTodo">
+    last todo: {{_lastTodo.id}}: {{_lastTodo.title}}
+</div>
+
+<hr/> Two way databinding:
+<br/>
+<todo-control [(todo)]="singleTodo"></todo-control>
+{{singleTodo | json}}
+
+<hr/>
+<button (click)="markAllComplete()">Mark All Comnplete</button>
