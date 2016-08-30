@@ -1,0 +1,6 @@
+<pre>
+    <span [ngClass]="friend.gender">{{friend.name | uppercase | removeSpaces}}</span>    
+    Active: <label [style.color]="friend.isActive ? 'red' : 'blue'">{{friend.isActive}}</label>
+    Two way databinding: <input type="checkbox" [(ngModel)]="friend.isActive"/> 
+    One way databinding: <input type="checkbox" [checked]="friend.isActive" (click)="activeCheckBox($event)"/>
+</pre>
