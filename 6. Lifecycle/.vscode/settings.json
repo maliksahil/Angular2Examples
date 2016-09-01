@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "app/**/*.js":true,
+        "**/*.js.map":true,
+        "node_modules":true,
+        "typings":true,
+        ".vscode":true,
+        "styles.css":true,
+        "typings.json":true
+    }
+}
