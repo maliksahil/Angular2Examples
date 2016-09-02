@@ -1,0 +1,9 @@
+<span>
+    <span *ngIf="!isEdit">
+        {{todo.id}}. {{todo.title}}
+    </span>
+    <span *ngIf="isEdit">
+        {{todo.id}}. <input name="title" [(ngModel)]="todo.title"/> 
+    </span>
+    <a href="#" (click)="toggleEdit($event)">Edit</a>
+</span>

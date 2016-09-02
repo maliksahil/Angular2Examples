@@ -1,0 +1,26 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+    <div *ngFor="let todo of _todos | async; let i = index">
+        <todo-control [todo]="todo" (todoChange)="updateTodo($event)"
+        name="todo{{i}}" ngDefaultControl ngModel
+        >
+        </todo-control>
+    </div>
+
+    <div>
+        <h2>Add a todo:</h2>
+        <label for="todoTitle">Title</label>
+        <input type="text" id="todoTitle" name="title" ngModel>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<table>
+    <thead>
+        <td><b>Business Object</b></td>
+    </thead>
+    <tr>
+        <td>
+            <pre>{{_todos | async | json}}</pre>
+        </td>
+    </tr>
+</table>
