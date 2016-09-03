@@ -18,14 +18,10 @@ export class TodosComponent {
     private _todos: Observable<Todo[]>;
     public myForm: FormGroup;
 
-    constructor(
-        private _todoService: TodoService,
-        private _fb: FormBuilder) { }
+    constructor(private _todoService: TodoService,private _fb: FormBuilder) { }
 
     ngOnInit() {
-        this.myForm = this._fb.group({
-            'todos': this._fb.array([])
-        });
+        this.myForm = this._fb.group({'todos': this._fb.array([])});
 
         this._todoService.newTodo.subscribe((todo) => {
             const control = <FormArray>this.myForm.controls['todos'];
@@ -36,8 +32,7 @@ export class TodosComponent {
     }
 
     initTodoControl(todo: Todo) {
-        var formGroup = this._fb.group({
-            id: [todo.id],
+        var formGroup = this._fb.group({id: [todo.id],
             title: [todo.title, Validators.required]
         });
         formGroup.valueChanges.subscribe((todo) => {
@@ -46,9 +41,7 @@ export class TodosComponent {
         return formGroup;
     }
 
-    addTodo(todo: Todo) {
-        this._todoService.addTodo(todo);
-    }
+    addTodo(todo: Todo) {this._todoService.addTodo(todo);}
 
     removeTodo(todoFormGroup: FormGroup, i: number) {
         let deletedTodo: Todo = todoFormGroup.value;
@@ -57,6 +50,5 @@ export class TodosComponent {
         this._todoService.removeTodo(deletedTodo);
     }
 
-    onSubmit(formData: any) {
-    }
+    onSubmit(formData: any) {}
 }

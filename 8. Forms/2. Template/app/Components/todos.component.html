@@ -1,6 +1,7 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
     <div *ngFor="let todo of _todos | async; let i = index">
-        <todo-control [todo]="todo" (todoChange)="updateTodo($event)"
+        <todo-control [todo]="todo" 
+        (todoChange)="updateTodo($event)"
         name="todo{{i}}" ngDefaultControl ngModel
         >
         </todo-control>

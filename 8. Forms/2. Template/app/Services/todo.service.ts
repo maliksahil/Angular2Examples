@@ -37,7 +37,8 @@ export class TodoService {
                 return operation(todos);
             }, allTodos)
             .publishReplay(1).refCount();
-        // We share the most recent list of todos across anyone who's interested in subscribing and cache the last known list of todos
+        // We share the most recent list of todos across anyone who's 
+        // interested in subscribing and cache the last known list of todos
 
         this.create.map(function (todo: Todo): ITodosOperation {
             return (todos: Todo[]) => {

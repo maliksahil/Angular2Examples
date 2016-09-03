@@ -3,7 +3,8 @@
         <div *ngFor="let todo of myForm.controls.todos.controls; let i=index">
             <div [formGroupName]="i">
                 <todo-control [group]="myForm.controls.todos.controls[i]"></todo-control>
-                <button *ngIf="myForm.controls.todos.controls.length > 0" (click)="removeTodo(myForm.controls.todos.controls[i], i)">Delete</button>
+                <button *ngIf="myForm.controls.todos.controls.length > 0" 
+                    (click)="removeTodo(myForm.controls.todos.controls[i], i)">Delete</button>
             </div>
         </div>
     </div>
