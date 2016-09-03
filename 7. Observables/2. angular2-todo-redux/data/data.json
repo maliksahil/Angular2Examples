@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "title": "Steal donut truck",
+        "details": [
+            {
+                "key": "TruckColor",
+                "value": "White"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Speed on the freeway",
+        "details": [
+            {
+                "key": "Speed",
+                "value": 90
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Get caught by cop",
+        "details": [
+            {
+                "key": "OfferDonut",
+                "value": true
+            }
+        ]
+    }
+]
