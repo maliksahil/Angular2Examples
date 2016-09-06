@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     <h1>My First Angular 2 App</h1>
     <b>Hello {{name}}</b><br/>
     <ul>
-        <li *ngFor="#hobby of hobbies;let i = index">
+        <li *ngFor="let hobby of hobbies;let i = index">
             {{i}}. {{hobby.id}}: {{hobby.name}}
         </li>
     </ul>
