@@ -1,2 +1,2 @@
-import { OpaqueToken } from '@angular/core/src/di';
+import { OpaqueToken } from '@angular/core';
 export const AppStore = new OpaqueToken('App.store');

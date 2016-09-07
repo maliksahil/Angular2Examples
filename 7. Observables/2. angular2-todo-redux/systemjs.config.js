@@ -1,7 +1,3 @@
-/**
- * System configuration for Angular 2 samples
- * Adjust as necessary for your application needs.
- */
 (function(global) {
   // map tells the System loader where to look for things
   var map = {
@@ -9,14 +5,16 @@
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs':                       'node_modules/rxjs',
-    'redux':                      'node_modules/redux'
+    'redux':                      'node_modules/redux/dist',
+//    'traceur':                    'node_modules/traceur/src'    
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
-    'redux':                      { main: 'dist/redux.js', defaultExtension: 'js' }
+    'redux':                      { main: 'redux.js', defaultExtension: 'js' },
+//    'traceur':                    { main: 'traceur.js', defaultExtension: 'js' },
   };
   var ngPackageNames = [
     'common',
@@ -36,7 +34,7 @@
   }
   // Bundled (~40 requests):
   function packUmd(pkgName) {
-    packages['@angular/'+pkgName] = { main: '/bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
+    packages['@angular/'+pkgName] = { main: 'bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
   }
   // Most environments should use UMD; some (Karma) need the individual index files
   var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
