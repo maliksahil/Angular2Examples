@@ -1,10 +1,10 @@
 import {Observable} from 'rxjs/Rx';
 
-// basicObservable();
-// mapOperator();
-// mapAndFilter();
-// reduceOperator();
-// scanOperator();
+basicObservable();
+mapOperator();
+mapAndFilter();
+reduceOperator();
+scanOperator();
 shareOperator();
 
 // share operator prevents seperate processing chains for each subscriber
