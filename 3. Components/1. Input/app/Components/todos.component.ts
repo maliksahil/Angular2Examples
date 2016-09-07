@@ -1,12 +1,11 @@
 import { Component} from '@angular/core';
 
 import {Todo} from '../BusinessObjects'
-import {TodoComponent} from '../Components/todo.component';
+
 
 @Component({
     selector: 'todos',
-    templateUrl: './app/Components/todos.component.html',
-    directives: [TodoComponent]
+    templateUrl: './app/Components/todos.component.html'
 })
 
 
