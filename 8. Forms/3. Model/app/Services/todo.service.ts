@@ -1,6 +1,6 @@
-import { Injectable, bind } from '@angular/core';
+import { Injectable } from '@angular/core';
 import {Observable, Subject, BehaviorSubject} from 'rxjs/Rx';
-import {Http, HTTP_PROVIDERS} from '@angular/http';
+import {Http} from '@angular/http';
 
 import {Todo} from '../BusinessObjects';
 
@@ -77,6 +77,6 @@ export class TodoService {
     }
 }
 
-export var todosServiceInjectables: Array<any> = [
-    bind(TodoService).toClass(TodoService)
-];
+// export var todosServiceInjectables: Array<any> = [
+//     bind(TodoService).toClass(TodoService)
+// ];

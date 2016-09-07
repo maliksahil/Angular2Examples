@@ -1,5 +1,4 @@
 import { Component, ViewChildren, QueryList } from '@angular/core';
-import {FORM_DIRECTIVES} from '@angular/forms';
 import {Observable, Subject, BehaviorSubject} from 'rxjs/Rx';
 
 import {TodoService} from '../Services/todo.service'
@@ -9,8 +8,7 @@ import {TodoComponent} from '../Components/todo.component';
 @Component({
     selector: 'todos',
     templateUrl: './app/Components/todos.component.html',
-    providers: [TodoService],
-    directives: [TodoComponent, FORM_DIRECTIVES]
+    providers: [TodoService]
 })
 
 

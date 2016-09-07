@@ -1,5 +1,5 @@
 import { Component, ViewChildren, QueryList } from '@angular/core';
-import {FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES, FormBuilder, FormGroup, Validators, FormArray} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators, FormArray} from '@angular/forms';
 import {Observable, Subject, BehaviorSubject} from 'rxjs/Rx';
 
 import {TodoService} from '../Services/todo.service'
@@ -9,8 +9,7 @@ import {TodoComponent} from '../Components/todo.component';
 @Component({
     selector: 'todos',
     templateUrl: './app/Components/todos.component.html',
-    providers: [TodoService, FormBuilder],
-    directives: [FORM_DIRECTIVES, REACTIVE_FORM_DIRECTIVES, TodoComponent]
+    providers: [TodoService, FormBuilder]
 })
 
 
