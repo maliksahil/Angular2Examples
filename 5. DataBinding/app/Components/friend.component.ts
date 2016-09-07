@@ -1,12 +1,11 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Friend} from '../BusinessObjects';
-import {RemoveSpaces} from './removespacepipe';
+
 
 @Component({
     selector: 'friend',
     templateUrl: './app/Components/friend.component.html',
-    styleUrls:['./app/Components/friend.component.css'],
-    pipes:[RemoveSpaces]
+    styleUrls:['./app/Components/friend.component.css']
 })
 
 export class FriendComponent {

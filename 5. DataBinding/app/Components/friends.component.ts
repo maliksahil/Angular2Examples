@@ -1,14 +1,13 @@
 import {Component, ViewChild} from '@angular/core';
-import {HTTP_BINDINGS, Http} from '@angular/http';
+import {Http} from '@angular/http';
 import 'rxjs/Rx';
 
 import {Friend} from '../BusinessObjects';
-import {FriendComponent} from './friend.component'
+
 
 @Component({
     selector: 'friends',
-    templateUrl: './app/Components/friends.component.html',
-    directives:[FriendComponent]
+    templateUrl: './app/Components/friends.component.html'
 })
 
 export class FriendsComponent {
