@@ -1,6 +1,6 @@
-import { Injectable, bind } from '@angular/core';
+import { Injectable } from '@angular/core';
 import {Observable, Subject, BehaviorSubject} from 'rxjs/Rx';
-import {Http, HTTP_PROVIDERS, Response} from '@angular/http';
+import {Http, Response} from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import {Todo} from '../BusinessObjects';
