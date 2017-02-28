@@ -4,3 +4,4 @@
 **/typings
 **/npm-debug*.*
 !**/systemjs.config.js
+!**/webpack.config.js
