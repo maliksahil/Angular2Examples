@@ -4,7 +4,6 @@ import 'rxjs/Rx';
 
 import {Friend} from '../BusinessObjects';
 
-
 @Component({
     selector: 'friends',
     templateUrl: './app/Components/friends.component.html'
