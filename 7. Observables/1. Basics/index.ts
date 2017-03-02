@@ -1,10 +1,10 @@
 import {Observable} from 'rxjs/Rx';
 
-// basicObservable();
-// mapOperator();
-// mapAndFilter();
-// reduceOperator();
-// scanOperator();
+basicObservable();
+mapOperator();
+mapAndFilter();
+reduceOperator();
+scanOperator();
 shareOperator();
 
 // cold observable, and is not shared by default - seperate processing chain for each observable.
