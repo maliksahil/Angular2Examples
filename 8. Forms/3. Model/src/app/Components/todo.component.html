@@ -1,0 +1,10 @@
+<span [formGroup]="todoForm">
+    <span *ngIf="!isEdit">
+        {{todoForm.value.id}}. 
+        {{todoForm.value.title}}
+    </span>
+    <span *ngIf="isEdit">
+        {{todoForm.value.id}}. <input formControlName="title"/> 
+    </span>
+    <button (click)="toggleEdit($event)">Edit</button>
+</span>

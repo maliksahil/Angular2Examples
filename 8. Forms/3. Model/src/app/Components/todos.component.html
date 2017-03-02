@@ -1,0 +1,31 @@
+<form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm)">
+    <div formArrayName="todos">
+        <div *ngFor="let todo of myForm.controls.todos.controls; let i=index">
+            <div [formGroupName]="i">
+                <todo-control [group]="myForm.controls.todos.controls[i]"></todo-control>
+                <button *ngIf="myForm.controls.todos.controls.length > 0" 
+                    (click)="removeTodo(myForm.controls.todos.controls[i], i)">Delete</button>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <button (click)="addTodo({'id':myForm.controls.todos.controls.length,'title':''})">Add New</button>
+    <hr/>
+    <button type="submit">Submit Form</button>
+</form>
+
+
+<table>
+    <thead>
+        <td><b>Databound data</b></td>
+        <td><b>Business Object</b></td>
+    </thead>
+    <tr>
+        <td>
+            <pre>{{ myForm.valueChanges | async | json}}</pre>
+        </td>
+        <td>
+            <pre>{{_todos | async | json}}</pre>
+        </td>
+    </tr>
+</table>
