@@ -1,8 +1,0 @@
-<pre *ngFor="let friend of friends | async">
-    <span [ngClass]="friend.gender">{{friend.name | uppercase }}</span>    
-    Active: <label [style.color]="friend.isActive ? 'red' : 'blue'">{{friend.isActive}}</label>
-    Two way databinding: <input type="checkbox" [(ngModel)]="friend.isActive"/>    
-    One way databinding: <input type="checkbox" [checked]="friend.isActive" (click)="activeCheckBox(friend)"/>
-</pre>
-
-<button (click)="goToFriends()">Go Back</button>

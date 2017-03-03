@@ -1,7 +1,0 @@
-<ul>
-    <li *ngFor="let friend of friends | async; let i = index">
-        <a href="" [routerLink]="['friend', friend._id]">
-        {{i}}. {{friend.name}}
-        </a>
-    </li>
-</ul>
