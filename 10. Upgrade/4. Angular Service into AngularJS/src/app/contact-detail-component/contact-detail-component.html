@@ -1,0 +1,8 @@
+<div>
+  <b>{{$ctrl.contact.name}}</b>
+  <span>{{$ctrl.contact.email || '-'}}</span>
+  <div>
+    <a href="#/">Go Back</a>
+    <a ng-href="#/contact/{{$ctrl.contact.id}}/edit">Edit</a>
+  </div>
+</div>
