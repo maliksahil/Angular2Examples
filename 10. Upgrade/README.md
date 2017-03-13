@@ -151,11 +151,11 @@ The goal is not to replace it entirely (just yet) but instead only replace what 
 7. Run the app, verify that the results are still the same.
 
 <a name="e3"/>
-  ## Exercise 3: refactor ContactsService to ng2 service and register with ng1
+## Exercise 3: refactor ContactsService to ng2 service and register with ng1
 
 At this point we want to rewrite the `ContactsService` as an Angular  service. But since we are still using the service from different AngularJS components we need to make sure that it continues to be available in both worlds. In other words, this time we want to use an Angular service from within AngularJS.
 
-  ### Tasks
+### Tasks
 
 1.   Rename the old `contacts-service.es5.js` to `contacts-service.es5.js.dontuse` file and remove it's import from the index.ts file.
 
