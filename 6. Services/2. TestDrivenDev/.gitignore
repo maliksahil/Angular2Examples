@@ -3,7 +3,6 @@
 # compiled output
 /dist
 /tmp
-/out-tsc
 
 # dependencies
 /node_modules
@@ -37,6 +36,10 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
-# System Files
+#System Files
 .DS_Store
 Thumbs.db
+
+#Exceptions
+!karma.conf.js
+!protractor.conf.js
