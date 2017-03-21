@@ -12,6 +12,7 @@ import { Observable } from 'rxjs/Rx';
 export class AsyncValidator implements Validator {
     validate(c: AbstractControl): Promise<{ [key: string]: any }> | Observable<{ [key: string]: any }> {
         return this.validateUniqueEmailPromise(c.value);
+        // return this.validateUniqueEmailObservable(c.value).first();
     }
     validateUniqueEmailObservable(email: string) {
         return new Observable(observer => {
