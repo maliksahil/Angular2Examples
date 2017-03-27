@@ -1,4 +1,4 @@
-import { downgradeComponent } from '@angular/upgrade/bundles/upgrade-static.umd';
+import { downgradeComponent } from '@angular/upgrade/static';
 import { ContactsListItemComponent } from './contacts-list-item-component/contacts-list-item-component';
 
 import { IAngularStatic } from 'angular';
