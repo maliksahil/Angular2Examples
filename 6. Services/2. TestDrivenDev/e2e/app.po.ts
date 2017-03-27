@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class TDDPage {
+export class TestDriveDevPage {
   navigateTo() {
     return browser.get('/');
   }
