@@ -34,7 +34,7 @@ The goal of this first exercise is to simply throw in Angular and bootstrap the 
    import 'zone.js';
    import 'reflect-metadata';
 
-   import {UpgradeModule} from '@angular/upgrade/bundles/upgrade-static.umd';
+   import {UpgradeModule} from '@angular/upgrade/static';
    import {AppModule} from './app.module';
 
    import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
@@ -50,7 +50,7 @@ The goal of this first exercise is to simply throw in Angular and bootstrap the 
    ```typescript
    import { NgModule } from '@angular/core';
    import { BrowserModule } from '@angular/platform-browser';
-   import { UpgradeModule } from '@angular/upgrade/bundles/upgrade-static.umd';
+   import { UpgradeModule } from '@angular/upgrade/static';
 
    @NgModule({
      imports: [BrowserModule, UpgradeModule],
@@ -124,7 +124,7 @@ The goal is not to replace it entirely (just yet) but instead only replace what 
    ```typescript
    import { NgModule } from '@angular/core';
    import { BrowserModule } from '@angular/platform-browser';
-   import { UpgradeModule } from '@angular/upgrade/bundles/upgrade-static.umd';
+   import { UpgradeModule } from '@angular/upgrade/static';
 
    import { ContactsListItemComponent } from './contacts-list-item-component/contacts-list-item-component';
 
@@ -159,7 +159,7 @@ At this point we want to rewrite the `ContactsService` as an Angular  service. B
 
 1.   Rename the old `contacts-service.es5.js` to `contacts-service.es5.js.dontuse` file and remove it's import from the index.ts file.
 
-2.   Create a file `app/contacts-service/contacts-service.ts` with the following content.
+2. Create a file `app/contacts-service/contacts-service.ts` with the following content.
 
     ```typescript
     import {Injectable} from '@angular/core';
@@ -199,7 +199,7 @@ At this point we want to rewrite the `ContactsService` as an Angular  service. B
     ```typescript
     import { NgModule } from '@angular/core';
     import { BrowserModule } from '@angular/platform-browser';
-    import { UpgradeModule } from '@angular/upgrade/bundles/upgrade-static.umd';
+    import { UpgradeModule } from '@angular/upgrade/static';
 
     import { ContactsService } from './contacts-service/contacts-service';
     import { ContactsListItemComponent } from './contacts-list-item-component/contacts-list-item-component';

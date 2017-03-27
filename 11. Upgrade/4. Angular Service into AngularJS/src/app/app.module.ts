@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { UpgradeModule } from '@angular/upgrade/bundles/upgrade-static.umd';
+import { UpgradeModule } from '@angular/upgrade/static';
 
 import { ContactsService } from './contacts-service/contacts-service';
 import { ContactsListItemComponent } from './contacts-list-item-component/contacts-list-item-component';

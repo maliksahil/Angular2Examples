@@ -1,4 +1,4 @@
-import { downgradeComponent, downgradeInjectable } from '@angular/upgrade/bundles/upgrade-static.umd';
+import { downgradeComponent, downgradeInjectable } from '@angular/upgrade/static';
 
 import { ContactsListItemComponent } from './contacts-list-item-component/contacts-list-item-component';
 import { ContactsService } from './contacts-service/contacts-service';

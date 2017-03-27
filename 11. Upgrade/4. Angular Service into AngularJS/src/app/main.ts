@@ -1,7 +1,7 @@
 import 'zone.js';
 import 'reflect-metadata';
 
-import {UpgradeModule} from '@angular/upgrade/bundles/upgrade-static.umd';
+import {UpgradeModule} from '@angular/upgrade/static';
 import {AppModule} from './app.module';
 
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
