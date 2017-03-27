@@ -1,10 +1,10 @@
-import { LazyLoadingPage } from './app.po';
+import { EagerLazyLoadingPage } from './app.po';
 
-describe('lazy-loading App', () => {
-  let page: LazyLoadingPage;
+describe('eager-lazy-loading App', () => {
+  let page: EagerLazyLoadingPage;
 
   beforeEach(() => {
-    page = new LazyLoadingPage();
+    page = new EagerLazyLoadingPage();
   });
 
   it('should display message saying app works', () => {
